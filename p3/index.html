@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <title>result check</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            background-color: #f4f4f9;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 400px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #result {
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Result checker </h2>
+
+        <label for="username">your namme:</label>
+        <input type="text" id="username" placeholder="As like : Rohim">
+
+        <label for="marks">Number obtained (1-100):</label>
+        <input type="number" id="marks" placeholder="As like : 85">
+
+        <button id="checkBtn"> see result</button>
+
+        <p id="result"></p>
+    </div>
+
+    <script>
+        document.getElementById("checkBtn").addEventListener("click", function() {
+            
+ 
+            const name = document.getElementById("username").value;
+            const marks = Number(document.getElementById("marks").value);
+            const resultElement = document.getElementById("result");
+
+            if (name === "" || isNaN(marks) || marks === 0) {
+                resultElement.innerText = "Enter your name and number!";
+                resultElement.style.color = "red";
+                return;
+            }
+
+            if (marks >= 80) {
+                resultElement.innerText = congratulation ${name}! you got: A+`;
+                resultElement.style.color = "green";
+            } 
+            else if (marks >= 50) {
+                resultElement.innerText = good ${name}!you got: Pass;
+                resultElement.style.color = "blue";
+            } 
+            else {
+                resultElement.innerText = sorry ${name}! you got: Fail;
+                resultElement.style.color = "red";
+            }
+        });
+    </script>
+
+</body>
+</html>
