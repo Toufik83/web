@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Sum two ellement</title>
+        <title>project 2</title>
         <style>
              body {
             font-family: Arial, sans-serif;
@@ -54,9 +54,9 @@
             let a=Number(document.getElementById("num1").value);
             let b=Number(document.getElementById("num2").value);
                 if(operator==='+') result=a+b;
-                if(operator==='-') result=a-b;
-                if(operator==='*') result=a*b;
-                if(operator==='/') result=a/b;
+               else if(operator==='-') result=a-b;
+                else if(operator==='*') result=a*b;
+                else if(operator==='/') result=a/b;
             
              document.getElementById("result").innerHTML=result;
             }
