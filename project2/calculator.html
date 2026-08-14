@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sum two ellement</title>
+        <style>
+             body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            background-color: #f4f4f9;
+        }
+            button{
+                
+               background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            width: 24.4%;
+            padding: 8px;
+            }
+            input{
+               width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            font-size: 16px;
+            }
+            #r2{
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        </style>
+    </head>
+
+    <body>
+
+        <input type="number" id="num1" placeholder="Enter number :">
+        <br>
+        <input type="number" id="num2" placeholder="Enter 2nd number :">
+         <br>
+        
+         <button onclick="calculate('+')">+</button>
+         <button onclick="calculate('-')">-</button>
+         <button onclick="calculate('*')">*</button>
+         <button onclick="calculate('/')">/</button>
+
+       <h3 id="r2"> Result :</h3> <h3 id="result"></h3>
+     
+        <script>
+            function calculate(operator){
+            
+
+            let a=Number(document.getElementById("num1").value);
+            let b=Number(document.getElementById("num2").value);
+                if(operator==='+') result=a+b;
+                if(operator==='-') result=a-b;
+                if(operator==='*') result=a*b;
+                if(operator==='/') result=a/b;
+            
+             document.getElementById("result").innerHTML=result;
+            }
+       
+        </script>
+    </body>
+</html>
