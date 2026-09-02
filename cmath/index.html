@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C++ & Java Math Functions Cheat Sheet</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; color: #333; }
+        h1 { text-align: center; color: #2c3e50; border-bottom: 2px solid #2c3e50; padding-bottom: 8px; }
+        h2 { color: #16a085; margin-top: 25px; border-left: 4px solid #16a085; padding-left: 8px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; margin-bottom: 20px; }
+        th, td { border: 1px solid #bdc3c7; padding: 10px; text-align: left; }
+        th { background-color: #f2f2f2; color: #2c3e50; }
+        code { background-color: #f8f9fa; padding: 2px 6px; border-radius: 4px; font-family: Consolas, monospace; color: #e74c3c; }
+        .note { font-size: 0.9em; color: #7f8c8d; text-align: center; margin-top: 30px; }
+    </style>
+</head>
+<body>
+
+    <h1>C++ (&lt;cmath&gt;) & Java (Math) Cheat Sheet</h1>
+
+    <h2>1. Power & Exponent Functions</h2>
+    <table>
+        <tr><th>Operation</th><th>C++ (&lt;cmath&gt;)</th><th>Java (Math)</th><th>Example &rarr; Output</th></tr>
+        <tr><td>Power (x^y)</td><td><code>pow(2, 3)</code></td><td><code>Math.pow(2, 3)</code></td><td>2³ &rarr; 8</td></tr>
+        <tr><td>Square Root (√x)</td><td><code>sqrt(16)</code></td><td><code>Math.sqrt(16)</code></td><td>√16 &rarr; 4</td></tr>
+        <tr><td>Cube Root (∛x)</td><td><code>cbrt(27)</code></td><td><code>Math.cbrt(27)</code></td><td>∛27 &rarr; 3</td></tr>
+        <tr><td>Exponential (e^x)</td><td><code>exp(1)</code></td><td><code>Math.exp(1)</code></td><td>e¹ &rarr; 2.718...</td></tr>
+        <tr><td>Natural Log (ln)</td><td><code>log(10)</code></td><td><code>Math.log(10)</code></td><td>ln(10) &rarr; 2.302...</td></tr>
+        <tr><td>Base-10 Log</td><td><code>log10(100)</code></td><td><code>Math.log10(100)</code></td><td>log₁₀(100) &rarr; 2</td></tr>
+    </table>
+
+    <h2>2. Rounding & Absolute Value</h2>
+    <table>
+        <tr><th>Operation</th><th>C++ (&lt;cmath&gt;)</th><th>Java (Math)</th><th>Example &rarr; Output</th></tr>
+        <tr><td>Absolute Value (|x|)</td><td><code>abs(-5.5)</code></td><td><code>Math.abs(-5.5)</code></td><td>|-5.5| &rarr; 5.5</td></tr>
+        <tr><td>Ceiling (Round Up)</td><td><code>ceil(4.1)</code></td><td><code>Math.ceil(4.1)</code></td><td>4.1 &rarr; 5</td></tr>
+        <tr><td>Floor (Round Down)</td><td><code>floor(4.9)</code></td><td><code>Math.floor(4.9)</code></td><td>4.9 &rarr; 4</td></tr>
+        <tr><td>Round to Nearest</td><td><code>round(4.5)</code></td><td><code>Math.round(4.5)</code></td><td>4.5 &rarr; 5</td></tr>
+        <tr><td>Truncate Decimal</td><td><code>trunc(4.9)</code></td><td><code>(int) 4.9</code></td><td>4.9 &rarr; 4</td></tr>
+    </table>
+
+    <h2>3. Trigonometry</h2>
+    <table>
+        <tr><th>Operation</th><th>C++ (&lt;cmath&gt;)</th><th>Java (Math)</th><th>Notes</th></tr>
+        <tr><td>Sine</td><td><code>sin(x)</code></td><td><code>Math.sin(x)</code></td><td>Angle x must be in radians</td></tr>
+        <tr><td>Cosine</td><td><code>cos(x)</code></td><td><code>Math.cos(x)</code></td><td>Angle x must be in radians</td></tr>
+        <tr><td>Tangent</td><td><code>tan(x)</code></td><td><code>Math.tan(x)</code></td><td>Angle x must be in radians</td></tr>
+        <tr><td>Inverse Sine</td><td><code>asin(x)</code></td><td><code>Math.asin(x)</code></td><td>Returns angle in radians</td></tr>
+        <tr><td>Inverse Cosine</td><td><code>acos(x)</code></td><td><code>Math.acos(x)</code></td><td>Returns angle in radians</td></tr>
+        <tr><td>Hypotenuse</td><td><code>hypot(a, b)</code></td><td><code>Math.hypot(a, b)</code></td><td>Calculates √(a² + b²)</td></tr>
+    </table>
+
+    <h2>4. Modulo & Status Checking</h2>
+    <table>
+        <tr><th>Operation</th><th>C++ (&lt;cmath&gt;)</th><th>Java (Math)</th><th>Description / Output</th></tr>
+        <tr><td>Floating Modulo</td><td><code>fmod(5.5, 2.0)</code></td><td><code>5.5 % 2.0</code></td><td>5.5 mod 2.0 &rarr; 1.5</td></tr>
+        <tr><td>Check NaN</td><td><code>isnan(x)</code></td><td><code>Double.isNaN(x)</code></td><td>Checks if value is Not-a-Number</td></tr>
+        <tr><td>Check Infinity</td><td><code>isinf(x)</code></td><td><code>Double.isInfinite(x)</code></td><td>Checks if value is infinite (∞)</td></tr>
+    </table>
+
+    <p class="note">C++ & Java Math Reference Cheat Sheet</p>
+
+</body>
+</html>
